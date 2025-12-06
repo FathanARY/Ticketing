@@ -70,19 +70,11 @@
                         </a>
                     </div>
                 </div>
-<<<<<<< HEAD
         </div>
 
         <div class="login-footer">
             <span>Privacy Policy</span>
             <span>© Gateway to PTN 2025</span>
-=======
-
-            <div class="login-footer">
-                <span>Privacy Policy</span>
-                <span>© Gateway to PTN 2025</span>
-            </div>
->>>>>>> fe8adb1 (forgot password)
         </div>
     </div>
 </body>

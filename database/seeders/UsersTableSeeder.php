@@ -10,7 +10,7 @@ class UsersTableSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('users')->insert([
+        $users = [
             [
                 'nama_lengkap' => 'Admin GTP',
                 'email' => 'admin@gtp.com',
@@ -33,6 +33,13 @@ class UsersTableSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-        ]);
+        ];
+
+        foreach ($users as $user) {
+            DB::table('users')->updateOrInsert(
+                ['email' => $user['email']], // Check by email (unique)
+                $user // Insert or update with this data
+            );
+        }
     }
 }

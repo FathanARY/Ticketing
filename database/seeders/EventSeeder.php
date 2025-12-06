@@ -9,10 +9,6 @@ class EventSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
-        DB::table('events')->truncate();
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
-
         $events = [
             [
                 'event_id' => 1,
@@ -46,6 +42,11 @@ class EventSeeder extends Seeder
             ],
         ];
 
-        DB::table('events')->insert($events);
+        foreach ($events as $event) {
+            DB::table('events')->updateOrInsert(
+                ['event_id' => $event['event_id']], // Check by event_id
+                $event // Insert or update with this data
+            );
+        }
     }
 }

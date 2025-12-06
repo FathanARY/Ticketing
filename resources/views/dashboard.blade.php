@@ -20,32 +20,10 @@
             <span>Gateway To PTN</span>
         </a>
 
-<<<<<<< HEAD
         <div class="profile-section">
             <div class="profile-trigger" id="profileTrigger">
                 <div class="profile-avatar">
                     {{ substr(Auth::user()->nama_lengkap, 0, 1) }}
-=======
-    <div class="main">
-            <div class="profile font-3">
-                <div class="cover">
-                    <div class="judul">
-                        <h1>BELI TIKET</br><span style="color : #cc3300;">SEKARANG !</span><h1>
-                    </div>
-                    <div class="univ">
-                        <div class="by-box">*</div>
-                        <div class="ie-box">SLOT TERBATAS</div>
-                    </div>
-                </div>
-                <div class="description font-1">
-                    <p>Dapatkan tiket Anda sekarang dan bergabunglah dengan kami dalam acara yang tak terlupakan ini. Jangan lewatkan kesempatan untuk belajar, networking, dan bersenang-senang bersama para calon mahasiswa lainnya!
-                    </p>
-                </div>
-                <div class="description font-1">
-                    <a href="{{ route('ticket.dashboard') }}">
-                        <button type="button" style="margin:10px 0px;">Beli Tiket</button>
-                    </a>
->>>>>>> fe8adb1 (forgot password)
                 </div>
                 <span class="profile-name">{{ Auth::user()->nama_lengkap }}</span>
                 <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i>
@@ -78,7 +56,6 @@
         </div>
     </nav>
 
-<<<<<<< HEAD
     <!-- Main Content -->
     <div class="dashboard-container">
         <!-- Welcome Banner -->
@@ -86,17 +63,11 @@
             <div class="welcome-text">
                 <h1>Welcome back, {{ explode(' ', Auth::user()->nama_lengkap)[0] }}!</h1>
                 <p>Ready to prepare for your dream university?</p>
-=======
-    <div class="tickets-section font-1 page-2">
-        <div class="tickets-container">
-            <div class="tickets-header">
-                <h1 class="font-3">Tiket Saya</h1>
-                <p>Lihat status pembelian tiket Anda</p>
->>>>>>> fe8adb1 (forgot password)
             </div>
             <div class="welcome-action">
-                <a href="{{ route('ticket.dashboard') }}" class="btn-primary">
-                    <i class="fas fa-ticket-alt"></i> Buy New Ticket
+                {{-- <a href="{{ route('ticket.dashboard') }}" class="btn-primary"> --}}
+                <a href="#" class="btn-primary">
+                    <i class="fas fa-ticket-alt"></i> Buy New Ticket (Coming Soon)
                 </a>
             </div>
         </div>
@@ -156,24 +127,6 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-=======
-    <div id="proofModal" class="proof-modal">
-        <div class="proof-modal-backdrop" onclick="closeProofModal()"></div>
-        <div class="proof-modal-content">
-            <button class="proof-modal-close" onclick="closeProofModal()">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </button>
-            <div class="proof-modal-image">
-                <img id="proofImage" src="" alt="Bukti Pembayaran">
-            </div>
-        </div>
-    </div>
-
-    <script src="{{ asset('js/scripts.js') }}"></script>
->>>>>>> fe8adb1 (forgot password)
     <script>
         // Dropdown Toggle Logic
         const profileTrigger = document.getElementById('profileTrigger');
