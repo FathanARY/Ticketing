@@ -1,0 +1,111 @@
+/* public/css/mainEvent.css */
+
+.page-4 {
+    /* Gradasi dari akhir Page 3 (putih/pink) kembali ke Ungu Gateway */
+    background: linear-gradient(to bottom, #f2e6ee 0%, #cba6dd 50%, #977dff 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 60px 100px 60px;
+    position: relative;
+}
+
+.main-event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.main-event-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.main-event-header h1 {
+    color: #6654F1; /* Warna kontras agar judul terbaca */
+    font-size: 46px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    border-bottom: 3px solid #6654F1;
+    padding-bottom: 10px;
+}
+
+.main-event-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+/* Kotak Penjelasan Kiri */
+.me-description-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.me-title {
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.me-text p {
+    color: #333; /* Warna teks gelap biar terbaca di background terang */
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Kotak Fitur Kanan */
+.me-features-box {
+    flex: 0.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.feature-card {
+    background: #6654F1;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(102, 84, 241, 0.3);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: #E79119; /* Aksen Orange Indomie Enak */
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.feature-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .main-event-content {
+        flex-direction: column;
+    }
+    .me-features-box {
+        width: 100%;
+    }
+}

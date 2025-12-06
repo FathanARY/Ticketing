@@ -1,0 +1,159 @@
+/* File: public/css/selection-modal.css */
+
+/* Backdrop Modal (Latar Gelap) */
+.proof-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6); /* Lebih gelap biar fokus */
+    backdrop-filter: blur(8px); /* Efek blur di belakang */
+    animation: fadeIn 0.3s ease;
+}
+
+/* Kotak Konten Utama */
+.proof-modal-content {
+    background: white;
+    margin: 5% auto; /* Posisi agak ke atas */
+    padding: 0; /* Padding diatur di dalam inner */
+    border: none;
+    width: 90%;
+    max-width: 800px; /* Lebih lebar biar kartu lega */
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    animation: slideUp 0.4s ease;
+}
+
+/* Tombol Close */
+.close-modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    z-index: 10;
+    transition: 0.3s;
+}
+.close-modal-btn:hover {
+    background: #ff4b4b;
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Header Modal */
+.modal-header-custom {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+.modal-header-custom h2 {
+    font-family: 'Asimovian', sans-serif;
+    color: #0600AB; /* Warna Biru Tema */
+    font-size: 32px;
+    margin: 0;
+}
+.modal-header-custom p {
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Container Kartu Pilihan */
+.selection-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 50px 60px;
+    flex-wrap: wrap;
+}
+
+/* Kartu Pilihan (Desain Utama) */
+.selection-card {
+    flex: 1;
+    min-width: 280px;
+    /* GRADASI UNGU SESUAI TEMA */
+    background: linear-gradient(135deg, #0600AB 0%, #977dff 100%);
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek membal */
+    border: 3px solid transparent;
+    box-shadow: 0 10px 20px rgba(6, 0, 171, 0.2);
+}
+
+/* Efek Hover Kartu */
+.selection-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(6, 0, 171, 0.4);
+    border-color: gold; /* Border Emas saat hover */
+}
+
+/* Ikon di dalam kartu */
+.card-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.2));
+}
+
+/* Judul Kartu */
+.card-title {
+    font-family: 'Asimovian', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Deskripsi Kartu */
+.card-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #FFE3FE; /* Putih Pink muda */
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Tombol Select di dalam kartu */
+.btn-select {
+    padding: 10px 30px;
+    background: white;
+    color: #0600AB;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.selection-card:hover .btn-select {
+    background: gold;
+    color: #0600AB;
+    transform: scale(1.1);
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

@@ -1,0 +1,166 @@
+.navbar {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.3);
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color:#FFE3FE;
+}
+
+.bottom {
+  display: flex;
+  gap: 5px;
+}
+
+.by {
+  font-size: 12px;
+  font-weight: bold;
+  color:#FFE3FE;
+}
+
+.ie {
+  font-size: 24px;
+  font-weight: bold;
+  color :gold
+}
+
+.navbar  ul {
+    list-style: none;
+}
+
+.navbar-content {
+    display: flex;
+    gap:60px;
+}   
+
+
+.navbar a {
+    text-decoration: none;
+    color:#FFE3FE;
+}
+
+
+.GTP {
+    width: 70px;
+    border-radius: 100px;
+    left: 20px;
+}
+
+.login-signup {
+    display: flex;
+    gap : 30px;
+}
+
+.navbar button {
+    font-family: "Poppins", sans-serif;;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    padding : 5px 24px;
+    border : none;
+    border-radius: 16px;
+    color: #FFE3FE;
+    background-color: #E79119;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar button:hover {
+    color: #E79119;
+    background-color: #FFE3FE;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content { 
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.3);
+    width: fit-content;
+    overflow: hidden;
+}
+
+.dropdown-content li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  width: 100px;
+  padding: 10px 24px;
+  border: 1px solid #bcbcbc;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #977dff;
+    color: #FFE3FE;
+}
+
+/* File: header.css */
+
+.navbar {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.3);
+    padding: 0 50px;
+    margin-bottom: 20px;
+    
+    /* TAMBAHAN WAJIB: Agar Navbar selalu di layer paling atas */
+    position: relative; 
+    z-index: 9999; 
+}
+
+/* ... (kode lain biarkan sama) ... */
+
+.dropdown-content { 
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.3);
+    width: fit-content;
+    overflow: hidden;
+
+    /* TAMBAHAN WAJIB: Agar kotak menu ngambang di atas segalanya */
+    z-index: 10000;
+}

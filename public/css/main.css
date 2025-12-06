@@ -1,0 +1,62 @@
+.main {
+    display: grid;
+    grid-template-columns: 750px 1fr;
+    grid-template-rows: 500px ;
+    height: 589px;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0 100px;
+    gap:40px;
+}
+
+.profile {
+    font-weight: bold;
+}
+
+.univ {
+    display: flex;
+    align-items: flex-start;
+    gap:5px;
+    margin-top: 10px;
+}
+
+.judul > h1{
+    font-size: 64px;
+    color: #FFE3FE;
+}
+
+.by-box {
+    font-size: 18px;
+    border-radius: 4px;
+    color: #FFE3FE;
+}
+
+.ie-box {
+    font-size: 36px;
+    font-weight: bold;
+    color: gold;
+}
+
+.description {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFE3FE  ;
+    text-align: justify ;
+}
+
+.card {
+    display: flex;
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-10deg);
+}
+
+.gambar{
+    margin-top: 80px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 16px 36px rgba(0,0,0,0.8);
+}

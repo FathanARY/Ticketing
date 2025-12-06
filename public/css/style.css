@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.page-1 {
+    background: linear-gradient(to top, #0600AB, #977dff);
+}
+
+.page-2 {
+    background: linear-gradient(to bottom, #0600AB, #0033ff, #977dff);
+}
+
+.page-3 {
+    background: linear-gradient(to bottom, #977dff, #ffccf2, #f2e6ee);
+}
+
+.main-login {
+    display: flex;   
+    height: 100vh;  
+}
+
+.font-1 {
+    font-family: "Poppins", sans-serif;;
+}
+.font-2 {
+    font-family: "Wendy One", sans-serif;
+}
+.font-3 {
+    font-family: "Asimovian", sans-serif;
+}
